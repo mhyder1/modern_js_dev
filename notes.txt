@@ -1,0 +1,19 @@
+https://mvilrokx.gitbooks.io/always-up-to-date-guide-for-modern-javascript-dev/content/chapter-2/#babel
+
+1. npm init -y
+2. npm install babel-cli --save-dev
+3. npm install babel-preset-es2015 --save-dev
+4. crate babelrc file:
+		{
+		  "presets": [
+		    [
+		      "es2015",
+		    ]
+		  ]
+		}
+5. add to scripts in package.json
+	"build": "babel src -d dist"
+
+6. create basic HTML file at root
+7. create dist and src folder
+8. add app.js to src folder
