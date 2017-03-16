@@ -1,5 +1,9 @@
 https://mvilrokx.gitbooks.io/always-up-to-date-guide-for-modern-javascript-dev/content/chapter-2/#babel
 
+http-server:
+A simple "http-server -c-1 -p 8010" should work. Consider using a port you did not used before.
+
+
 1. npm init -y
 2. npm install babel-cli --save-dev
 3. npm install babel-preset-es2015 --save-dev
@@ -17,3 +21,14 @@ https://mvilrokx.gitbooks.io/always-up-to-date-guide-for-modern-javascript-dev/c
 6. create basic HTML file at root
 7. create dist and src folder
 8. add app.js to src folder
+9. add js code to app.js file to display in html file
+10. npm run build
+11. start a server and test file
+12. add watcher to package.json for build process (in script section)
+    "watch": "babel -w src -d dist"
+13. npm run watch
+14. install Browsersync for live reload: browser-sync -g
+15. browser-sync start --server --files "dist/*.js, index.html"
+...
+16. install webpack
+17. install babel-loader: this will make webpack invoke babel

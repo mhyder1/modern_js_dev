@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/lib/sayHello.js"],"names":["sayHello","name"],"mappings":";;;;;AAAA,IAAMA,WAAW,SAAXA,QAAW;AAAA,MAACC,IAAD,uEAAQ,UAAR;AAAA,oBAAiCA,IAAjC;AAAA,CAAjB;;kBAEeD,Q","file":"sayHello.js","sourcesContent":["const sayHello = (name = 'Muhammad') => `Hello ${ name }`\r\n\r\nexport default sayHello"]}
